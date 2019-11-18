@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/jcButton.css">
+    <link rel="stylesheet" href="../css/jcCheckbox.css">
+    <link rel="stylesheet" href="../css/jcSwitch.css">
+</head>
+<style>
+    .box {
+        width: 65%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px 5px #ccc;
+    }
+</style>
+
+<body>
+    <form action="">
+        <div class="form-group">
+            <label class="form-label">活动名称</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label class="form-label">活动区域</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <button class="jc-btn jc-btn-success">提交</button>
+        </div>
+    </form>
+    <h2>.form-inline横向表单</h2>
+    <p>这是一个横向的表单组件 样式是通过.form-inline>.form-group这样方式实现的</p>
+    <form action="" class="form-inline">
+        <div class="form-group">
+            <label for="" class="form-label">用户名</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">手机号码</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <div class="circle-check">
+                <input type="checkbox">男
+            </div>
+        </div>
+        <button class="jc-btn jc-btn-info">查询</button>
+    </form>
+
+    <h2>
+        .form-horizontal是纵向表单
+    </h2>
+    <p>这种是最常使用的表单：有选择框 单选 多选 日期等</p>
+    <div class="box">
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="" class="form-label">用户</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">活动信息</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">活动内容</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="circle-check">
+                <input type="checkbox">是
+            </div>
+            <div class="circle-check">
+                <input type="checkbox">否
+            </div>
+            <div class="form-group">
+                <button class="jc-btn jc-btn-info">点击提交</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="box">
+        <h3>这是一个常用的组件</h3>
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="" class="form-label">用户</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">活动信息</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">即时配送</label>
+                <div class="form-check">
+                    <input type="checkbox" class="jc-switch jc-switch-info">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">是否配送</label>
+                <ul class="form-check">
+                    <li class="form-check-item">
+                        <div class="circle-check">
+                            <input type="checkbox">是
+                        </div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="circle-check">
+                            <input type="checkbox">否
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">活动内容</label>
+                <ul class="form-check">
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项01</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项02</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项03</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项04</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项05</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项06</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项07</span></div>
+                    </li>
+                    <li class="form-check-item">
+                        <div class="square-check"><input type="checkbox"><span class="check-content">选项08</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <button class="jc-btn jc-btn-info">点击提交</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

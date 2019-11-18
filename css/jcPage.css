@@ -1,0 +1,88 @@
+/* 这里写分页的样式 */
+.page{
+    width: 100%;
+}
+.jc-pagination{
+    display: inline-block;
+    margin: 0 15px;
+}
+.jc-pagination>li>a{
+    display: inline-block;
+    text-decoration: none;
+    padding:15px;
+    border: 1px solid #ccc;
+    color: #383030;
+}
+.jc-pagination>li{
+    display: inline-block;
+    list-style: none;
+}
+.jc-pagination-bgc>li>a{
+    background-color: #f4f4f5;
+    border: 1px solid #f4f4f5;
+    color: #303133;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 900;
+}
+.jc-pagination-bgc .active a{
+    background-color: #0653fa;
+    color: #fafafa;
+}
+.jc-pagination-bgc>li>a:hover{
+    background-color: #0653fa;
+    color: #fafafa;
+}
+.jc-pagination-noBgc>li>a{
+    color: #303133;
+    font-size: 16px;
+    padding:5px;
+    border: 1px solid transparent;
+    font-weight: 900;
+}
+.jc-pagination-noBgc .active>a{
+    color: #0653fa;
+}
+.jc-pagination-noBgc>li>a:hover{
+    color: #0653fa;
+}
+.jc-pagination-inverse>li>a{
+    background-color: #393d49;
+    color: #ccc;
+    font-size: 14px;
+    border: 1px solid #393d49;
+    padding: 5px 10px;
+}
+.jc-pagination-inverse>li{
+    float: left;
+}
+.jc-pagination-inverse>li>a:hover{
+    background-color: #000;
+    color:#fff;
+    border: 1px solid #000;
+}
+.jc-pagination-inverse .active>a{
+    background-color: #000;
+    color:#fff;
+    border: 1px solid #000;
+}
+.jc-pagination-inverse-lg>li>a{
+    background-color: #393d49;
+    color: #ccc;
+    font-size: 16px;
+    border: 1px solid #393d49;
+    padding: 8px 12px;
+}
+.jc-pagination-inverse-lg>li>a:hover{
+    background-color: aqua;
+    color:#fff;
+    border: 1px solid #000;
+}
+.jc-pagination-inverse-lg .active>a{
+    background-color: aqua;
+    color:#fff;
+    border: 1px solid #000;
+}
+.jc-pagination-inverse-lg>li{
+    float: left;
+}

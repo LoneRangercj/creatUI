@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单练习</title>
+    <link rel="stylesheet" href="../css/inputList.css">
+    <link rel="stylesheet" href="../css/jcButton.css">
+    <link rel="stylesheet" href="../css/jcSwitch.css">
+</head>
+
+<body>
+    <div class="inline-input">
+        <h1>行内表单</h1>
+        <form action="">
+            <div class="left-input">
+                <span>审批人</span>
+                <div class="formInline-user">
+                    <input type="text" placeholder="审批人" class="inline_input">
+                </div>
+            </div>
+            <div class="middle-input">
+                <span>活动区域</span>
+                <div class="formInline-region">
+                    <input type="text" placeholder="活动区域" class="inline_input">
+                </div>
+            </div>
+            <div class="right-input">
+                <button class="jc-btn jc-btn-info"><span>查询</span></button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="dynamicForm">
+        <h1>动态增减表单项</h1>
+        <form action="">
+            <div class="topInput">
+                <label class="form-label" for="">邮箱</label>
+                <input type="text" class="form-input">
+            </div>
+            <div class="bottomInput">
+                <label class="form-label" for="">域名0</label>
+                <input type="text" class="form-input">
+            </div>
+            <div class="right-btn">
+                <button class="jc-btn jc-btn-info"><span>删除</span></button>
+            </div>
+            <div class="bottom-btn">
+                <button class="jc-btn jc-btn-primary"><span>提交</span></button>
+                <button class="jc-btn jc-btn-default"><span>新增域名</span></button>
+                <button class="jc-btn jc-btn-default"><span>重置</span></button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="typicalForm">
+        <h1>典型表单</h1>
+        <form action="" class="jc-form">
+            <div class="jc-form-list">
+                <label class="form-label" for="" style="width: 80px;">活动名称</label>
+                <input type="text" class="form-input" style="width: 380px;margin-left: -4px;">
+            </div>
+            <div class="jc-form-list">
+                <label class="form-label" for="" style="width: 80px;">活动区域</label>
+                <input type="text" class="form-input" style="width: 380px;margin-left: -4px;" placeholder="请选择活动区域">
+            </div>
+            <div class="jc-form-list">
+                <label class="form-label" for="" style="width: 80px;">活动时间</label>
+                <input type="text" class="form-input" style="width: 174px;margin-left: -4px;">
+                <div style="display:inline-block;width: 32px;margin-left:-4px;text-align: center;">-</div>
+                <input type="text" class="form-input" style="width: 174px;margin-left: -4px;">
+            </div>
+            <div class="jc-form-list">
+                <label class="form-label" for="" style="width: 80px;">即时配送</label>
+                <input type="checkbox" class="jc-switch jc-switch-info" style="vertical-align: middle;">
+            </div>
+            <div class="jc-form-list">
+                <label class="form-label-activity" for="" style="width: 80px;">活动性质</label>
+                <div class="checkbox-group">
+                    <label for="" class="jc-checkbox">
+                        <span class="jc-checkbox-input">
+                            <input class="jc-checkbox-inner" type="checkbox"></input>
+                        </span>
+                        <span class="jc-checkbox-label">美食/餐厅线上活动</span>
+                    </label>
+                    <label for="" class="jc-checkbox">
+                        <span class="jc-checkbox-input">
+                            <input class="jc-checkbox-inner" type="checkbox"></input>
+                        </span>
+                        <span class="jc-checkbox-label">地推活动</span>
+                    </label>
+                    <label for="" class="jc-checkbox">
+                        <span class="jc-checkbox-input">
+                            <input class="jc-checkbox-inner" type="checkbox"></input>
+                        </span>
+                        <span class="jc-checkbox-label">地推活动</span>
+                    </label>
+                    <label for="" class="jc-checkbox">
+                        <span class="jc-checkbox-input">
+                            <input class="jc-checkbox-inner" type="checkbox"></input>
+                        </span>
+                        <span class="jc-checkbox-label">地推活动</span>
+                    </label>
+                </div>
+            </div>
+            <div class="jc-form-list">
+                <label for="" class="form-label" style="width: 80px;">特殊资源</label>
+                <div class="jc-checkbox-content" style="margin-left: -4px;">
+                    <div class="jc-radio-group">
+                        <label for=""class="jc-radio">
+                            <input type="radio" class="jc-checkbox-circle">
+                            <span class="jc-radio-label">线上品牌商赞助</span>
+                        </label>
+                        <label for=""class="jc-radio">
+                            <input type="radio" class="jc-checkbox-circle">
+                            <span class="jc-radio-label">线上品牌商赞助</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="jc-form-list">
+                <label for="" class="form-label" style="width: 80px;">活动形式</label>
+                <div class="jc-textarea" style="margin-left: -4px;">
+                    <textarea type="textarea" rows="2" class="jc-textarea-inner" style="min-width: 33px;"></textarea>
+                </div>
+            </div>
+            <div class="jc-form-list">
+                <div class="jc-form-button" style="margin-left: 80px;">
+                    <button class="jc-btn jc-btn-primary"><span>立即创建</span></button>
+                    <button class="jc-btn jc-btn-cancel"><span>取消</span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    var a = NaN;
+   console.log(typeof a);
+</script>
+</html>

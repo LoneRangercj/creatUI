@@ -1,0 +1,265 @@
+/* 
+    这是一个全局的css样式库 ，欢迎使用jcUI样式表
+*/
+/* 清空默认 */
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+input {
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    /* input标签聚焦不出现默认边框: */
+    -webkit-appearance: none;
+    /* 用于IOS下移除原生样式 */
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* input标签聚焦不出现默认边框: */
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+  button {
+    overflow: visible;
+    outline: none;
+  }
+  
+  /* 清空表单样式 */
+  
+  /* 将所有布局类标签 都设置为块元素 */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  /* 设置行内块 */
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  
+  /* 清空a标签默认样式 */
+  a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+
+/*  */
+*{
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: border-box;
+}
+/* 布局 */
+.jc-container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.jc-container-fluid{
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* 按钮组件样式 */
+.jc-btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.jc-btn-default{
+    background-color: #333;
+    color: white;
+    border: 1px solid #ccc;
+}
+.jc-btn-success{
+   background-color: #67c23a; 
+   color: #fff;
+}
+.jc-btn-warning{
+    background-color:#e6a23c;
+    color: #fff;
+    border-color: #e6a23c;
+}
+.jc-btn-error{
+    background-color:#f56c6c;
+    color: white;
+    border-color: #f56c6c;
+}
+.jc-btn-cancel{
+    color: #fff;
+    background-color: #909399;
+    border-color: #909399;
+}
+.jc-btn-sure{
+    background-color: #8bc220;
+    border-color: #8bc220;
+    color: white;
+}
+.jc-btn-default{
+    background-color: #2f2f2f;
+    border-color: #2f2f2f;
+    color: white;
+}
+.jc-btn-danger{
+    background-color: #ff1022;
+    border-color: #ff1022;
+    color: white;
+}
+.jc-btn-primary{
+    background-color: #409eff;
+    border-color: #409eff;
+    color: white;
+}
+.jc-btn-info{
+    background-color: #01AAED;
+    border-color: #01AAED;
+    color: white;
+}
+.jc-btn-normal{
+    background-color: #FF8800;
+    border-color: #FF8800;
+    color: white;
+}
+.jc-btn-warm{
+    background-color: hsl(51, 93%,54% );
+    border-color: hsl(51, 93%,54% );
+    color: white;
+}
+/* 渐变色按钮 */
+/* 成功     */
+.jc-btn-success-rgb{
+    background-image: linear-gradient(135deg, rgb(105, 255, 151) 10%, rgb(0, 228, 255) 100%);
+    color: #fff;
+}
+/* 警告     */
+.jc-btn-warning-rgb{
+    background-image: linear-gradient(135deg, rgb(253, 110, 106) 10%, rgb(255, 198, 0) 100%);
+    color: #fff;
+}
+/* 错误     */
+.jc-btn-error-rgb{
+    background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%);
+    color: #fff;
+}
+/* 取消     */
+.jc-btn-cancel-rgb{
+    background-image: linear-gradient(135deg, rgb(107, 95, 95) 10%, rgb(63, 56, 65) 100%);
+    color: #fff;
+}
+/* 确认     */
+.jc-btn-sure-rgb{
+    background-image: linear-gradient(135deg, rgb(112, 245, 112) 10%, rgb(73, 198, 40) 100%);
+    color: #fff;
+}
+/* 默认     */
+.jc-btn-default-rgb{
+    background-image: linear-gradient(135deg, rgb(72, 85, 99) 10%, rgb(41, 50, 60) 100%);
+    color: #fff;
+}
+/* 危险     */
+.jc-btn-danger-rgb{
+    background-image: linear-gradient(90deg, rgb(228, 58, 21) 10%, rgb(230, 82, 69) 40%);
+    color: #fff;
+}
+/* 首选     */
+.jc-btn-primary-rgb{
+    background-image: linear-gradient(135deg, rgb(94, 252, 232) 10%, rgb(115, 110, 254) 100%);
+    color: #fff;
+}
+/* 一般信息     */
+.jc-btn-info-rgb{
+    background-image: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+    color: #fff;
+}
+/* 百搭按钮     */
+.jc-btn-normal-rgb{
+    background-image: linear-gradient(135deg, rgb(254, 193, 99) 10%, rgb(222, 67, 19) 100%);
+    color: #fff;
+}
+/* 暖色按钮     */
+.jc-btn-warm-rgb{
+    background-image: linear-gradient(135deg, rgb(253, 235, 113) 10%, rgb(248, 216, 0) 100%);
+    color: #fff;
+}
+/* 大按钮   */
+.jc-btn-bg{
+    font-size: 20px;
+    padding: 8px 15px;
+}
+/* 小按钮   */
+.jc-btn-sm{
+    font-size: 12px;
+    padding: 3px 6px;
+}
+/* 中按钮   */
+.jc-btn-md{
+    font-size: 14px;
+    padding: 4px 10px;
+}
+/* - 圆角按钮  */
+.jc-btn-radius{
+    border-radius: 12px;
+}

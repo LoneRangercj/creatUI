@@ -1,0 +1,56 @@
+/* 必须是input为checkbox  class添加switch才能实现效果 */
+input[type="checkbox"].jc-switch{
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 2.8rem;
+    height: 1.4rem;
+    /* border: 1px solid #ccc; */
+    background-color: #ccc;
+    border-radius: 0.7rem;
+}
+input[type="checkbox"].jc-switch::after{
+    content: "";
+    display:inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px #999;
+    transition: left 0.1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type="checkbox"].jc-switch:checked{
+    background-color: #32BA58;
+}
+/* 
+1.默认为不被选中状态
+当input[type="checkbox"]被选中时：伪元素显示下面的样式 位置发生变化 */
+input[type="checkbox"].jc-switch:checked::after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+/* 状态 */
+input[type="checkbox"]:checked.jc-switch.jc-switch-info{
+    background-color: #409eff;
+}
+input[type="checkbox"]:checked.jc-switch.jc-switch-success{
+    background-color: aqua;
+}
+input[type="checkbox"]:checked.jc-switch.jc-switch-danger{
+    background-color: rgb(255, 73, 73);
+}
+input[type="checkbox"]:checked.jc-switch.jc-switch-warm{
+    background-color: #409eff;
+}
+input[type="checkbox"].jc-switch.jc-switch-warm{
+    background-color: rgb(255, 73, 73);
+}
+input[type="checkbox"]:checked.jc-switch.jc-switch-primary{
+    background-color: hsl(51, 93%, 54%);
+}

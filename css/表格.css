@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.boss{
+    padding: 20px;
+    border: 1px solid #ebebeb;
+    margin-top: 30px;
+    border-radius: 7px;
+    position: relative;
+}
+.source-A{
+    overflow-x:auto;
+    overflow-y:auto;
+}
+.boss:hover{
+    box-shadow: 0 0 8px 0 rgba(232,237,250,.6),
+    0 2px 4px 0 rgba(232,237,250.5)
+}
+.ch-table-A{
+    width: 130%;
+    min-width: 100%;
+    text-align: center;
+    text-align: left;
+    border-collapse: collapse;
+}
+.ch-table-A thead th{
+    padding: 15px 20px;
+    color: #909399;
+}
+.ch-table-A td{
+    padding: 13px 20px;
+    border: 1px solid #ebeef5;
+    border-left: transparent;
+    border-right: transparent;
+    color: #606266;
+}
+.source-A td:nth-child(7){
+    position: absolute;
+    z-index: 100;
+    background:#fff;
+    right: 0; 
+    box-shadow: -5px 4px 6px 1px rgba(0,0,0,.12);
+}
+.source-A th:nth-child(7){
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    background:#fff;
+    box-shadow: -5px 4px 6px 1px rgba(0,0,0,.12);
+    padding: 15px 38.5px;
+}
+.ch-table-A tbody tr:hover td{
+    background-color: #f5f7fa;
+    transition: background-color .25s ease;
+}
+.font td{
+    font-size: 14px;
+}

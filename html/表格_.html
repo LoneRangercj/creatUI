@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/表格.css">
+</head>
+<style>
+     .tableBox{
+        padding: 20px;
+        border: 1px solid #ebebeb;
+        margin-top: 30px;
+        border-radius: 7px;
+        position: relative;
+     }
+     .tableFixed{
+         white-space: nowrap;
+         overflow-x: auto;
+     }
+     .tableFixedTable{
+        width: 130%;
+        min-width: 100%;
+        text-align: center;
+        text-align: left;
+        border-collapse: collapse;
+    }
+    .tableFixedTable thead th{
+        padding: 15px 20px;
+        color: #909399;
+    }
+    .tableFixedTable td{
+        padding: 13px 20px;
+        border: 1px solid #ebeef5;
+        border-left: transparent;
+        border-right: transparent;
+        color: #606266;
+    }
+    .tableFixedTable>thead>tr>th:nth-child(7),
+    .tableFixedTable>tbody>tr>td:nth-child(7){
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        
+    }
+    .tableFixedTable>thead>tr>th:nth-child(1),
+    .tableFixedTable>tbody>tr>td:nth-child(1){
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        
+    }
+    .tableFixedTable>thead>tr>th:nth-last-child(6)::before,
+    .tableFixedTable>tbody>tr>td:nth-last-child(6)::before{
+        content: "";
+        margin-left: 100px;
+    }
+    .tableFixedTable>thead>tr:hover th,
+    .tableFixedTable>tbody>tr:hover td{
+        background-color: red;
+    }
+</style>
+<body>
+    <h2 style="margin-top: 50px;">固定列和表头</h2>
+    <div class="boss">
+        <div class="source-A">
+            <table class="ch-table-A">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>姓名</th>
+                        <th>省份</th>
+                        <th>市区</th>
+                        <th>地区</th>
+                        <th>邮编</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="body-S">
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tableBox">
+        <div class="tableFixed">
+            <table class="tableFixedTable">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>姓名</th>
+                        <th>省份</th>
+                        <th>市区</th>
+                        <th>地区</th>
+                        <th>邮编</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="body-S">
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2016-05-02</td>
+                        <td>王小虎</td>
+                        <td>上海</td>
+                        <td>普陀区</td>
+                        <td>上海市普陀区金沙江路 1518 弄</td>
+                        <td>200333</td>
+                        <td class="table-full">
+                            <span>查看</span>
+                            <span>编辑</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
